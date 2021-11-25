@@ -2,7 +2,7 @@ var tasks = require("./../controllers/ApiController");
 
 module.exports = function(app){
 
-    app.get("/tasks", tasks.index)
+    app.get("/tasks", tasks.home)
 
     app.get("/tasks/:id", tasks.details)
 

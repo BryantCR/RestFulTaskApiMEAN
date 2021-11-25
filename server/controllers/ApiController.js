@@ -3,7 +3,7 @@ var Task = mongoose.model("Task");
 
 module.exports = {
 
-    index: function(req, res){
+    home: function(req, res){
         Task.find({}, function(err, task){
             if(err){
                 res.json({message: "Error!", error: err});

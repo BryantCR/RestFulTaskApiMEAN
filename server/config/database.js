@@ -1,6 +1,6 @@
 var fs = require("fs");
 var path = require("path");
-
+const mongoose = require("mongoose");
 var models_path = path.join(__dirname, "./../models");
 
 fs.readdirSync(models_path).forEach(function(file){
